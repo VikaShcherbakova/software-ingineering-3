@@ -6,7 +6,7 @@ import modeltextimage
 from transformers import AutoTokenizer, AutoModel, pipeline
 import torch
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
+
 st.title("Многостраничное Streamlit-приложение")
 page = st.sidebar.selectbox("Выберите страницу", ["Резюмирование текста","Белоглазова", "Усачёва", "Щербакова. Титаник", "Белоглазова. Нейронка", "Щербакова. Нейронка"])
 if page == "Белоглазова":
